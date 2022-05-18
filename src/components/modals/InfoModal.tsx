@@ -24,7 +24,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="S" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Az L betű szerepel a szóban és jó helyen van.
+        Az <code>L</code> betű szerepel a szóban és jó helyen van jelölve.
       </p>
 
       <div className="grid grid-cols-5 gap-1 mb-1 mt-4">
@@ -35,7 +35,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="K" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Az R betű szerepel a szóban, de nem jó helyen van.
+        Az <code>R</code> betű szerepel a szóban, de nem jó helyen van jelölve.
       </p>
 
       <div className="grid grid-cols-5 gap-1 mb-1 mt-4">
@@ -46,17 +46,25 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="K" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300 mb-8">
-        Az I betű nem szerepel a szóban.
+        Az <code>I</code> betű nem szerepel a szóban.
       </p>
 
       <p className="italic text-sm text-gray-500 dark:text-gray-300 pb-2">
-        Ez egy nyílt forráskódú, magyar változata a Wordle játéknak.
+        Ez egy nyílt forráskódú, magyar változata a{' '}
+        <a 
+          href="https://en.wikipedia.org/wiki/Wordle"
+          className="underline font-bold"
+          target="_blank"
+        >
+            Wordle
+        </a>{' '}játéknak.
       </p>
       <p className="italic text-sm text-gray-500 dark:text-gray-300 pb-2">
         Nézd meg{' '}
         <a
           href="https://github.com/mdanka/szozat"
           className="underline font-bold"
+          target="_blank"
         >
           a magyar verzió kódját itt.
         </a>
@@ -66,6 +74,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <a
           href="https://gist.github.com/Konstantinusz/f9517357e46fa827c3736031ac8d01c7"
           className="underline font-bold"
+          target="_blank"
         >
           innen
         </a>{' '}
@@ -76,6 +85,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <a
           href="https://github.com/cwackerfuss/react-wordle"
           className="underline font-bold"
+          target="_blank"
         >
           a kódját itt találod.
         </a>
@@ -85,6 +95,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <a
           href="https://www.nytimes.com/games/wordle/index.html"
           className="underline font-bold"
+          target="_blank"
         >
           itt kipróbálhatod.
         </a>
